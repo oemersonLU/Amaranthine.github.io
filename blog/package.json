@@ -1,0 +1,12 @@
+{
+  "name": "personal-site-blog",
+  "version": "1.0.0",
+  "description": "Blog backend for a personal website (no dependencies)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

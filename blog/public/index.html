@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" class=">
+<head>
+    <meta charset="UTF-8">
+    <title>Amaranthine – Personal Hub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 1️⃣ Your own stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+  <main class="container">
+    <header class = "heading">
+      <div class="tabs">
+        <object id="date">date</object>
+      </div>
+      <div class="tabs">
+        <object id="clock">time</object>
+      </div>
+    </header>
+    <nav class = "navigate">
+
+  <div class="window">
+
+    <div class="toolbar">
+      <span id="status">guest</span>
+      <button class="btn" id="authBtn">login</button>
+    </div>
+ 
+    <!-- login form -->
+    <div class="box" id="loginBox">
+      <label for="user">username</label>
+      <input id="user" autocomplete="username">
+      <label for="pass">password</label>
+      <input id="pass" type="password" autocomplete="current-password">
+      <div class="row">
+        <button class="btn" id="loginSubmit">enter</button>
+        <span class="error" id="loginError"></span>
+      </div>
+    </div>
+ 
+    <!-- new post (only visible when logged in) -->
+    <div class="box" id="composeBox">
+      <div class="stamp" id="stamp"></div>
+      <textarea id="newText" placeholder="write a new post..."></textarea>
+      <div class="row">
+        <button class="btn" id="postBtn">post</button>
+        <span class="error" id="postError"></span>
+      </div>
+    </div>
+ 
+    <div id="feed"></div>
+  </div>
+</nav>
+    <section class="blog">
+      blog
+    </section>
+    <section class="personal" style="display: flex; padding:10px; gap: 10px">
+      <img src="\images\profile.png">
+      <section>
+        Olivia Emerson
+        Amaranthine
+        Aphopyre
+      </section>
+    </section>
+    <section class="schedule">
+      schedule
+    </section>
+    <section class="links">
+      <div class="popup" onclick="myTrackerFunction()"><img src="\images\TRN.png" style="width:25px; height:25px;">
+        <span class="popuptext" id="myTracker">
+          <a href="https://tracker.gg/valorant/profile/riot/26cb0c1c-aeb3-4a7a-9adb-756ec1bcb887">Valorant</a><br>
+          <a href="https://tracker.gg/marvel-rivals/profile/ign/Aphopyre/overview?season=21">Marvel Rivals</a><br>
+          <a href="https://apex.tracker.gg/apex/profile/origin/Aphopyre/overview">Apex Legends</a>
+        </span>
+      </div>
+      <div class="popup" onclick="myInstagramFunction()"><img src="\images\Instagram.png" style="width:25px; height:25px;">
+        <span class="popuptext" id="myInstagram">
+          <a href="https://www.instagram.com/oemerson1406/">OEmerson1406 - Personal</a><br>
+          <a href="https://www.instagram.com/aphopyre/">Aphopyre - Twitch</a><br>
+        </span>
+      </div>
+      <div>
+        <a href="https://www.twitch.tv/aphopyre">
+          <img src="\images\Twitch.png" style="width:25px; height:25px;">
+        </a>
+      </div>
+      <div>
+        <a href="https://www.tiktok.com/@aphopyre?_r=1&_t=ZT-99TFyJ7TH8n">
+          <img src="\images\Tiktok.png" style="width:25px; height:25px;">
+        </a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

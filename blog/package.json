@@ -1,12 +1,13 @@
 {
-  "name": "personal-site-blog",
+  "name": "amaranthine-hub",
   "version": "1.0.0",
-  "description": "Blog backend for a personal website (no dependencies)",
+  "private": true,
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
-  "engines": {
-    "node": ">=18"
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-session": "^1.18.0"
   }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class=">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Amaranthine – Personal Hub</title>
@@ -20,42 +20,26 @@
         <object id="clock">time</object>
       </div>
     </header>
-    <nav class = "navigate">
-
-  <div class="window">
-
-    <div class="toolbar">
+    <nav class="navi">
       <span id="status">guest</span>
       <button class="btn" id="authBtn">login</button>
-    </div>
- 
-    <!-- login form -->
-    <div class="box" id="loginBox">
-      <label for="user">username</label>
-      <input id="user" autocomplete="username">
-      <label for="pass">password</label>
-      <input id="pass" type="password" autocomplete="current-password">
-      <div class="row">
-        <button class="btn" id="loginSubmit">enter</button>
-        <span class="error" id="loginError"></span>
+
+      <div id="loginBox" class="panel dropdown">
+        <input id="user" placeholder="username" autocomplete="username">
+        <input id="pass" type="password" placeholder="password" autocomplete="current-password">
+        <button class="btn" id="loginSubmit">log in</button>
+        <div id="loginError" class="error"></div>
       </div>
-    </div>
- 
-    <!-- new post (only visible when logged in) -->
-    <div class="box" id="composeBox">
-      <div class="stamp" id="stamp"></div>
-      <textarea id="newText" placeholder="write a new post..."></textarea>
-      <div class="row">
-        <button class="btn" id="postBtn">post</button>
-        <span class="error" id="postError"></span>
-      </div>
-    </div>
- 
-    <div id="feed"></div>
-  </div>
-</nav>
+    </nav>
     <section class="blog">
-      blog
+      <div id="composeBox" class="panel">
+        <div id="stamp"></div>
+        <textarea id="newText" rows="4" placeholder="write a post..."></textarea>
+        <button class="btn" id="postBtn">post</button>
+        <div id="postError" class="error"></div>
+      </div>
+
+      <div id="feed"></div>
     </section>
     <section class="personal" style="display: flex; padding:10px; gap: 10px">
       <img src="\images\profile.png">
